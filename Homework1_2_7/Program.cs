@@ -17,23 +17,18 @@ namespace Homework1_2_7
             char symbol = Convert.ToChar(Console.ReadLine());
             Console.WriteLine();
             int nameLenght = name.Length;
+            string symbolLine="";
 
             for(int i = 0; i < nameLenght+extraSymbols; i++)
             {
-                Console.Write(symbol);
+                symbolLine += Convert.ToString(symbol);
             }
 
-            Console.WriteLine();
+            Console.WriteLine(symbolLine);
             Console.Write(symbol);
             Console.Write(name);
             Console.WriteLine(symbol);
-
-            for (int i = 0; i < nameLenght + extraSymbols; i++)
-            {
-                Console.Write(symbol);
-            }
-
-            Console.WriteLine();
+            Console.WriteLine(symbolLine);
             Console.ReadKey();
         }
     }
